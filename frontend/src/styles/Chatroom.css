@@ -1,0 +1,164 @@
+.chatContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(22, 22, 22);
+    height: 100vh;
+    width: 100%;
+}
+.list{
+    width: 40%;
+    height: 100%;
+}
+.users{
+    overflow-y: auto;
+    height: 80vh;
+    width: 100%;
+}
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10%;
+    margin: 5%;
+    padding: 2%;
+    color: rgb(181, 255, 255);
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(181, 255, 255);
+}
+.userImg{
+    width: 15%;
+}
+
+/* <Logout />  */
+.logout{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 3%;
+    top: 80%;
+}
+.logout > img{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+.logout:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.logout:active{
+    opacity: 0.2;
+}
+
+/* <ChatBox /> */
+.chatBoxContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    background-color: rgb(14, 14, 14);
+}
+.chatBoxHeader{
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+    width: 90%;
+    height: 2%;
+    color: rgb(181, 255, 255);
+}
+.chatBoxHeader > button{
+    background-color: transparent;
+    border: none;
+    width: 7%;
+    cursor: pointer;
+}
+.chatBoxHeader > button:hover{
+    opacity: 0.5;
+}
+.chatBoxHeader > button:active{
+    opacity: 0.2;
+}
+.chatBoxHeader > button > img{
+    width: 100%;
+}
+.chatMessages{
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    padding: 5%;
+    overflow: auto;
+}
+.chatMessages > .sender {
+    align-self: flex-end;
+}
+.chatMessages > .receiver {
+    align-self: flex-start;
+}
+.sender{
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    padding: 2%;
+    border-radius: 20px;
+    font-weight: 800;
+}
+.receiver{
+    display: flex;
+    align-items: center;
+    background-color: rgb(124, 124, 124);
+    padding: 2%;
+    border-radius: 20px;
+    font-weight: 800;
+}
+.sendMessage{
+    width: 90%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+    padding: 0 5%;
+    background-color: rgb(22, 22, 22);
+}
+.sendMessage > input{
+    width: 80%;
+    height: 50%;
+    border-radius: 50px;
+    border: none;
+    background: rgb(14, 14, 14);
+    color: rgb(181, 255, 255);
+    font-size: 16px;
+    padding: 1% 3%;
+}
+.sendMessage > button{
+    width: 20%;
+    height: 75%;
+    border-radius: 50px;
+    border: none;
+    background: rgb(14, 14, 14);
+    color: rgb(181, 255, 255);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 1% 3%;
+}
+.sendMessage > button:hover{
+    cursor: pointer;
+    background-color: rgb(12, 12, 12);
+}
+.sendMessage > button:active{
+    background-color: rgb(10, 10, 10);
+    color: rgb(100, 255, 255);
+}

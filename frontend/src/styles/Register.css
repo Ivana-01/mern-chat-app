@@ -1,0 +1,126 @@
+.register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.bg{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.registerForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1%;
+    border-radius: 10px;
+    width: 40%;
+    color: aqua;
+}
+.inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+.inputs > label, .genderLabel{
+    font-size: 16px;
+    letter-spacing: 2px;
+    width: 40%;
+}
+.inputs > input{
+    padding: 1%;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    border: solid 2px aqua;
+    background: transparent;
+    color: aqua;
+    overflow: hidden;
+    width: 50%;
+}
+.registerBtn{
+    padding: 10px;
+    margin-top: 50px;
+    background: aqua;
+    border-radius: 10px;
+    color: rgb(0, 20, 22);
+    font-size: 20px;
+    font-weight: 600;
+    width: 30%;
+    cursor: pointer;
+}
+.loginTo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.loginLink{
+    padding: 10px;
+    background: transparent;
+    color: aqua;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.loginLink:hover{
+    color: rgb(165, 245, 255);
+    text-shadow: 2px 2px 2px rgb(165, 245, 255)
+}
+.loginLink:active{
+    text-shadow: none;
+}
+.genderInput{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+.genderRadio{
+    cursor: pointer;
+    width: 20%;
+}
+.radio{
+    opacity: 0;
+    cursor: pointer;
+}
+.radioLabel{
+    transition: all .3s;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+.newRadio{
+    position: absolute;
+    transform: translateX(-120%) translateY(30%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: all 0.3s;
+}
+.genderRadio:hover .newRadio{
+    border: 2px solid aqua;
+    box-shadow: 0 0 10px aqua;
+}
+.radio:checked + .radioLabel
+.newRadio{
+    border: 2px solid aqua;
+    background: radial-gradient(aqua 30%, transparent 30%);
+}
+.radio:checked + .radioLabel{
+    color: aqua;
+}
